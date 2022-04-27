@@ -1,0 +1,33 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  margin: 2vmax;
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+
+.div1 {
+  border-bottom: 1px solid red;
+}
+.div2 {
+  border-bottom: 1px solid green;
+}
+.div3 {
+  border-bottom: 1px solid blue;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

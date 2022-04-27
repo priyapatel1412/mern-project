@@ -1,0 +1,62 @@
+.topbar {
+  height: 120px;
+  width: 100%;
+  background-color: rgb(36, 34, 84);
+  position: sticky;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  top: 0;
+  flex: 9;
+  z-index: 1;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.appLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 1vmax;
+  object-fit: cover;
+}
+.topMiddle {
+  text-align: center;
+  flex: 3;
+}
+.topRight {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.link {
+  position: relative;
+  color: white;
+  font: 200 1.2vmax "Roboto";
+  text-decoration: none;
+}
+
+.linkName {
+  margin: 1vmax;
+}
+.icon {
+  color: white;
+  margin-right: 1vmax;
+}
+
+.cartValue {
+  position: absolute;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 50%;
+  top: -20px;
+  right: -10px;
+  display: grid;
+  place-items: center;
+}

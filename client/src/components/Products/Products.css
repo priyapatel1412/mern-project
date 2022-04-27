@@ -1,0 +1,146 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex: 12;
+}
+
+.products {
+  flex: 10;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  height: calc(100vh - 120px);
+  min-height: 30vh;
+}
+
+.filterBox {
+  flex: 2;
+  width: 10vmax;
+  height: calc(100vh - 120px);
+  padding: 30px;
+  margin: 0 0 60px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 120px;
+}
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  text-align: center;
+  font: 500 1.5vmax "Roboto";
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: white;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+/* .page-link:hover {
+  background-color: rgb(0, 0, 0);
+} */
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.categoryBox {
+  padding: 0;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.category-link:hover {
+  color: tomato;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+/* select {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+option {
+  font: 400 0.8vmax "Roboto";
+} */
+@media screen and (max-width: 600px) {
+  .filterBox {
+    max-width: 15vmax;
+    position: static;
+    margin: auto;
+  }
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+
+  select {
+    max-width: 15vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filterBox {
+    flex: 1;
+  }
+
+  .products {
+    flex: 1;
+  }
+}
